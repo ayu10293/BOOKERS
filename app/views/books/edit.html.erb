@@ -1,0 +1,10 @@
+<h5>Book was successfully created</h5>
+<%= form_with model: @book do |f| %>
+
+<%= f.label :Title %>
+<%= f.text_field :title %>
+
+<%= f.label :body %>
+<%= f.text_area :body %>
+
+<%= f.submit 'Create Book' %>
